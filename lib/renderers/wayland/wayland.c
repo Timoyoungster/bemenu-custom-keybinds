@@ -203,7 +203,7 @@ poll_key(const struct bm_menu *menu, unsigned int *unicode)
             return (mods & MOD_CTRL ? BM_KEY_RETURN : BM_KEY_UNICODE);
 
         case XKB_KEY_y:
-            return (mods & MOD_CTRL ? BM_KEY_PASTE_PRIMARY : BM_KEY_UNICODE);
+            return (mods & MOD_CTRL ? BM_KEY_RETURN : BM_KEY_UNICODE);
 
         case XKB_KEY_Y:
             return (mods & MOD_CTRL ? BM_KEY_PASTE_CLIPBOARD : BM_KEY_UNICODE);
